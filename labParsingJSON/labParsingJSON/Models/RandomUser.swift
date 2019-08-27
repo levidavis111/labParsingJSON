@@ -1,12 +1,16 @@
-//
-//  RandomUser.swift
-//  labParsingJSON
-//
-//  Created by Levi Davis on 8/27/19.
-//  Copyright © 2019 Levi Davis. All rights reserved.
-//
+
+
 
 import Foundation
+
+
+enum JSONError: Error {
+    case decodingError(Error)
+}
+
+struct Results: Codable {
+    let results: [RandomUser]
+}
 
 struct RandomUser: Codable {
     let name: NameWrapper
@@ -16,14 +20,16 @@ struct RandomUser: Codable {
     
     static func getRandomUsers(from data: Data) throws -> [RandomUser] {
         do {
-            let randomUsers = try JSONDecoder().decode([RandomUser].self, from: data)
-            return randomUsers
+            let result = try JSONDecoder().decode(Results.self, from: data)
+            return result.results
         } catch {
-            throw fatalError("\(error)")
+            print(error)
+            throw JSONError.decodingError(error)
         }
     }
     
 }
+
 
 struct NameWrapper: Codable {
     let first: String
