@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		FC95D7672315AC7700531F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7662315AC7700531F4D /* AppDelegate.swift */; };
-		FC95D7692315AC7700531F4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7682315AC7700531F4D /* ViewController.swift */; };
 		FC95D76C2315AC7700531F4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95D76A2315AC7700531F4D /* Main.storyboard */; };
 		FC95D76E2315AC7900531F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95D76D2315AC7900531F4D /* Assets.xcassets */; };
 		FC95D7712315AC7900531F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95D76F2315AC7900531F4D /* LaunchScreen.storyboard */; };
+		FC95D7792315AE2200531F4D /* WeatherTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7782315AE2200531F4D /* WeatherTabViewController.swift */; };
+		FC95D77B2315AE4200531F4D /* ColorTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D77A2315AE4200531F4D /* ColorTabViewController.swift */; };
+		FC95D77D2315AE5600531F4D /* RandomUserTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D77C2315AE5600531F4D /* RandomUserTabViewController.swift */; };
+		FC95D7802315B1EF00531F4D /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D77F2315B1EF00531F4D /* WeatherDetailViewController.swift */; };
+		FC95D7822315B20200531F4D /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7812315B20200531F4D /* ColorDetailViewController.swift */; };
+		FC95D7842315B20E00531F4D /* RandomUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC95D7632315AC7700531F4D /* labParsingJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = labParsingJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC95D7662315AC7700531F4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC95D7682315AC7700531F4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC95D76B2315AC7700531F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC95D76D2315AC7900531F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC95D7702315AC7900531F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC95D7722315AC7900531F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC95D7782315AE2200531F4D /* WeatherTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTabViewController.swift; sourceTree = "<group>"; };
+		FC95D77A2315AE4200531F4D /* ColorTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTabViewController.swift; sourceTree = "<group>"; };
+		FC95D77C2315AE5600531F4D /* RandomUserTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTabViewController.swift; sourceTree = "<group>"; };
+		FC95D77F2315B1EF00531F4D /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		FC95D7812315B20200531F4D /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
+		FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,35 @@
 		FC95D7652315AC7700531F4D /* labParsingJSON */ = {
 			isa = PBXGroup;
 			children = (
-				FC95D7662315AC7700531F4D /* AppDelegate.swift */,
-				FC95D7682315AC7700531F4D /* ViewController.swift */,
+				FC95D77E2315AE6200531F4D /* ViewControllers */,
+				FC95D7852315B21700531F4D /* DetailViewControllers */,
 				FC95D76A2315AC7700531F4D /* Main.storyboard */,
+				FC95D7662315AC7700531F4D /* AppDelegate.swift */,
 				FC95D76D2315AC7900531F4D /* Assets.xcassets */,
 				FC95D76F2315AC7900531F4D /* LaunchScreen.storyboard */,
 				FC95D7722315AC7900531F4D /* Info.plist */,
 			);
 			path = labParsingJSON;
+			sourceTree = "<group>";
+		};
+		FC95D77E2315AE6200531F4D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC95D7782315AE2200531F4D /* WeatherTabViewController.swift */,
+				FC95D77A2315AE4200531F4D /* ColorTabViewController.swift */,
+				FC95D77C2315AE5600531F4D /* RandomUserTabViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC95D7852315B21700531F4D /* DetailViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC95D77F2315B1EF00531F4D /* WeatherDetailViewController.swift */,
+				FC95D7812315B20200531F4D /* ColorDetailViewController.swift */,
+				FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */,
+			);
+			path = DetailViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC95D7692315AC7700531F4D /* ViewController.swift in Sources */,
+				FC95D77B2315AE4200531F4D /* ColorTabViewController.swift in Sources */,
 				FC95D7672315AC7700531F4D /* AppDelegate.swift in Sources */,
+				FC95D77D2315AE5600531F4D /* RandomUserTabViewController.swift in Sources */,
+				FC95D7822315B20200531F4D /* ColorDetailViewController.swift in Sources */,
+				FC95D7802315B1EF00531F4D /* WeatherDetailViewController.swift in Sources */,
+				FC95D7842315B20E00531F4D /* RandomUserDetailViewController.swift in Sources */,
+				FC95D7792315AE2200531F4D /* WeatherTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
