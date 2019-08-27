@@ -19,6 +19,7 @@
 		FC95D7842315B20E00531F4D /* RandomUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */; };
 		FC95D7872315B43A00531F4D /* randomUser.json in Resources */ = {isa = PBXBuildFile; fileRef = FC95D7862315B43A00531F4D /* randomUser.json */; };
 		FC95D78A2315B4C800531F4D /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7892315B4C800531F4D /* RandomUser.swift */; };
+		FC95D78D2315CEB900531F4D /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = FC95D78C2315CEB900531F4D /* weather.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailViewController.swift; sourceTree = "<group>"; };
 		FC95D7862315B43A00531F4D /* randomUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomUser.json; sourceTree = "<group>"; };
 		FC95D7892315B4C800531F4D /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		FC95D78C2315CEB900531F4D /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = ../../../weather.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FC95D7862315B43A00531F4D /* randomUser.json */,
+				FC95D78C2315CEB900531F4D /* weather.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC95D78D2315CEB900531F4D /* weather.json in Resources */,
 				FC95D7712315AC7900531F4D /* LaunchScreen.storyboard in Resources */,
 				FC95D76E2315AC7900531F4D /* Assets.xcassets in Resources */,
 				FC95D76C2315AC7700531F4D /* Main.storyboard in Resources */,
