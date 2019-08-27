@@ -20,6 +20,7 @@
 		FC95D7872315B43A00531F4D /* randomUser.json in Resources */ = {isa = PBXBuildFile; fileRef = FC95D7862315B43A00531F4D /* randomUser.json */; };
 		FC95D78A2315B4C800531F4D /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7892315B4C800531F4D /* RandomUser.swift */; };
 		FC95D78D2315CEB900531F4D /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = FC95D78C2315CEB900531F4D /* weather.json */; };
+		FC95D78F2315CFAF00531F4D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D78E2315CFAF00531F4D /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FC95D7862315B43A00531F4D /* randomUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomUser.json; sourceTree = "<group>"; };
 		FC95D7892315B4C800531F4D /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		FC95D78C2315CEB900531F4D /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = ../../../weather.json; sourceTree = "<group>"; };
+		FC95D78E2315CFAF00531F4D /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FC95D7892315B4C800531F4D /* RandomUser.swift */,
+				FC95D78E2315CFAF00531F4D /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				FC95D7672315AC7700531F4D /* AppDelegate.swift in Sources */,
 				FC95D77D2315AE5600531F4D /* RandomUserTabViewController.swift in Sources */,
 				FC95D78A2315B4C800531F4D /* RandomUser.swift in Sources */,
+				FC95D78F2315CFAF00531F4D /* Weather.swift in Sources */,
 				FC95D7822315B20200531F4D /* ColorDetailViewController.swift in Sources */,
 				FC95D7802315B1EF00531F4D /* WeatherDetailViewController.swift in Sources */,
 				FC95D7842315B20E00531F4D /* RandomUserDetailViewController.swift in Sources */,

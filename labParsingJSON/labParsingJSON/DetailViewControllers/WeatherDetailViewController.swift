@@ -9,7 +9,12 @@
 import UIKit
 
 class WeatherDetailViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var cityLabelOutlet: UILabel!
+    @IBOutlet weak var tempLableOutlet: UILabel!
+    @IBOutlet weak var weatherLabelOutlet: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
