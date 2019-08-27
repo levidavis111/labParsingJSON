@@ -17,6 +17,8 @@
 		FC95D7802315B1EF00531F4D /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D77F2315B1EF00531F4D /* WeatherDetailViewController.swift */; };
 		FC95D7822315B20200531F4D /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7812315B20200531F4D /* ColorDetailViewController.swift */; };
 		FC95D7842315B20E00531F4D /* RandomUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */; };
+		FC95D7872315B43A00531F4D /* randomUser.json in Resources */ = {isa = PBXBuildFile; fileRef = FC95D7862315B43A00531F4D /* randomUser.json */; };
+		FC95D78A2315B4C800531F4D /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7892315B4C800531F4D /* RandomUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FC95D77F2315B1EF00531F4D /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		FC95D7812315B20200531F4D /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 		FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailViewController.swift; sourceTree = "<group>"; };
+		FC95D7862315B43A00531F4D /* randomUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomUser.json; sourceTree = "<group>"; };
+		FC95D7892315B4C800531F4D /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		FC95D7652315AC7700531F4D /* labParsingJSON */ = {
 			isa = PBXGroup;
 			children = (
+				FC95D78B2315B4D400531F4D /* Models */,
+				FC95D7882315B45C00531F4D /* JSON */,
 				FC95D77E2315AE6200531F4D /* ViewControllers */,
 				FC95D7852315B21700531F4D /* DetailViewControllers */,
 				FC95D76A2315AC7700531F4D /* Main.storyboard */,
@@ -93,6 +99,22 @@
 				FC95D7832315B20E00531F4D /* RandomUserDetailViewController.swift */,
 			);
 			path = DetailViewControllers;
+			sourceTree = "<group>";
+		};
+		FC95D7882315B45C00531F4D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FC95D7862315B43A00531F4D /* randomUser.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FC95D78B2315B4D400531F4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC95D7892315B4C800531F4D /* RandomUser.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +178,7 @@
 				FC95D7712315AC7900531F4D /* LaunchScreen.storyboard in Resources */,
 				FC95D76E2315AC7900531F4D /* Assets.xcassets in Resources */,
 				FC95D76C2315AC7700531F4D /* Main.storyboard in Resources */,
+				FC95D7872315B43A00531F4D /* randomUser.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +192,7 @@
 				FC95D77B2315AE4200531F4D /* ColorTabViewController.swift in Sources */,
 				FC95D7672315AC7700531F4D /* AppDelegate.swift in Sources */,
 				FC95D77D2315AE5600531F4D /* RandomUserTabViewController.swift in Sources */,
+				FC95D78A2315B4C800531F4D /* RandomUser.swift in Sources */,
 				FC95D7822315B20200531F4D /* ColorDetailViewController.swift in Sources */,
 				FC95D7802315B1EF00531F4D /* WeatherDetailViewController.swift in Sources */,
 				FC95D7842315B20E00531F4D /* RandomUserDetailViewController.swift in Sources */,
