@@ -18,7 +18,14 @@ class WeatherTabViewController: UIViewController {
 
     @IBOutlet weak var weatherTableView: UITableView!
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is WeatherDetailViewController {
+            guard let indexPath = weatherTableView.indexPathForSelectedRow,
+                let weatherVC = segue.destination as? WeatherDetailViewController else {return}
+            let oneWeather = weatherResults[indexPath.row]
+            weatherVC.oneWeather = oneWeather
+        }
+    }
     
     
     override func viewDidLoad() {
