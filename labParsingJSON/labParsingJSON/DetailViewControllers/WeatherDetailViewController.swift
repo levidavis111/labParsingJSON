@@ -24,8 +24,8 @@ class WeatherDetailViewController: UIViewController {
     
     private func setUpView() {
         cityLabelOutlet.text = oneWeather.name
-        tempLableOutlet.text = "\(oneWeather.main.temp)"
-        weatherLabelOutlet.text = oneWeather.weather[0].description
+        tempLableOutlet.text = "Temp(C): \(oneWeather.main.temp)"
+        weatherLabelOutlet.text = "Description: \(oneWeather.weather[0].description)"
     }
 
 }

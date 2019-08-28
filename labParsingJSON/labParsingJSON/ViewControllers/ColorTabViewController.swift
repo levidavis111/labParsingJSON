@@ -18,6 +18,14 @@ class ColorTabViewController: UIViewController {
 
     @IBOutlet weak var colorTableView: UITableView!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ColorDetailViewController {
+            guard let indexPath = colorTableView.indexPathForSelectedRow,
+                let colorVC = segue.destination as? ColorDetailViewController else {return}
+            let oneColor = colorArray[indexPath.row]
+            colorVC.oneColor = oneColor
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

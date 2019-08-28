@@ -30,9 +30,9 @@ class RandomUserDetailViewController: UIViewController {
 
     private func setUpView() {
         nameLabelOutlet.text = "\(randomUser.name.first) \(randomUser.name.last)"
-        addressLabelOutlet.text = randomUser.location.street
-        phoneLabelOutlet.text = randomUser.phone
-        dobLabelOutlet.text = randomUser.dob.date
+        addressLabelOutlet.text = "Address: \(randomUser.location.street)"
+        phoneLabelOutlet.text = "Phone: \(randomUser.phone)"
+        dobLabelOutlet.text = "DoB: \(randomUser.dob.date)"
     }
 
 }
