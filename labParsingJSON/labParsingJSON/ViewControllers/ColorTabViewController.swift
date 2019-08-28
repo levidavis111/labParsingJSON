@@ -9,9 +9,20 @@
 import UIKit
 
 class ColorTabViewController: UIViewController {
+    
+    var colorArray = [Color]() {
+        didSet {
+            colorTableView.reloadData()
+        }
+    }
 
+    @IBOutlet weak var colorTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        colorTableView.delegate = self
+        colorTableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -27,4 +38,23 @@ class ColorTabViewController: UIViewController {
     }
     */
 
+}
+
+extension ColorTabViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colorArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = colorTableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
+        let oneColor = colorArray[indexPath.row]
+        cell.textLabel?.text = oneColor.name.value
+        cell.detailTextLabel?.text = oneColor.hex.clean
+        
+        
+        return cell
+    }
+    
+    
 }

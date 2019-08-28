@@ -21,6 +21,8 @@
 		FC95D78A2315B4C800531F4D /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7892315B4C800531F4D /* RandomUser.swift */; };
 		FC95D78D2315CEB900531F4D /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = FC95D78C2315CEB900531F4D /* weather.json */; };
 		FC95D78F2315CFAF00531F4D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D78E2315CFAF00531F4D /* Weather.swift */; };
+		FC95D7912315FC6500531F4D /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = FC95D7902315FC6500531F4D /* color.json */; };
+		FC95D7932315FDB700531F4D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95D7922315FDB700531F4D /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		FC95D7892315B4C800531F4D /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		FC95D78C2315CEB900531F4D /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = ../../../weather.json; sourceTree = "<group>"; };
 		FC95D78E2315CFAF00531F4D /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FC95D7902315FC6500531F4D /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = color.json; path = ../../../color.json; sourceTree = "<group>"; };
+		FC95D7922315FDB700531F4D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		FC95D7882315B45C00531F4D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				FC95D7902315FC6500531F4D /* color.json */,
 				FC95D7862315B43A00531F4D /* randomUser.json */,
 				FC95D78C2315CEB900531F4D /* weather.json */,
 			);
@@ -117,6 +122,7 @@
 		FC95D78B2315B4D400531F4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FC95D7922315FDB700531F4D /* Color.swift */,
 				FC95D7892315B4C800531F4D /* RandomUser.swift */,
 				FC95D78E2315CFAF00531F4D /* Weather.swift */,
 			);
@@ -184,6 +190,7 @@
 				FC95D78D2315CEB900531F4D /* weather.json in Resources */,
 				FC95D7712315AC7900531F4D /* LaunchScreen.storyboard in Resources */,
 				FC95D76E2315AC7900531F4D /* Assets.xcassets in Resources */,
+				FC95D7912315FC6500531F4D /* color.json in Resources */,
 				FC95D76C2315AC7700531F4D /* Main.storyboard in Resources */,
 				FC95D7872315B43A00531F4D /* randomUser.json in Resources */,
 			);
@@ -199,6 +206,7 @@
 				FC95D77B2315AE4200531F4D /* ColorTabViewController.swift in Sources */,
 				FC95D7672315AC7700531F4D /* AppDelegate.swift in Sources */,
 				FC95D77D2315AE5600531F4D /* RandomUserTabViewController.swift in Sources */,
+				FC95D7932315FDB700531F4D /* Color.swift in Sources */,
 				FC95D78A2315B4C800531F4D /* RandomUser.swift in Sources */,
 				FC95D78F2315CFAF00531F4D /* Weather.swift in Sources */,
 				FC95D7822315B20200531F4D /* ColorDetailViewController.swift in Sources */,
