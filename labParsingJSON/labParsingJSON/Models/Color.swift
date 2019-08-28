@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+struct Mode: Codable {
+    let colors: [Color]
+}
+
 struct Color: Codable {
     let name: ColorNameWrapper
     let rgb: RGBWrapper
@@ -16,8 +20,8 @@ struct Color: Codable {
     
     static func getColorData(from data: Data) throws -> [Color] {
         do {
-            let result = try JSONDecoder().decode([Color].self, from: data)
-            return result
+            let result = try JSONDecoder().decode(Mode.self, from: data)
+            return result.colors
         }
         catch {
             throw JSONError.decodingError(error)
