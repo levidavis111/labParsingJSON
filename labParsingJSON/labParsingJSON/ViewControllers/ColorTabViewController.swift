@@ -23,20 +23,25 @@ class ColorTabViewController: UIViewController {
         super.viewDidLoad()
         colorTableView.delegate = self
         colorTableView.dataSource = self
+        loadData()
 
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func loadData() {
+        guard let pathToJSONFile = Bundle.main.path(forResource: "color", ofType: "json") else {
+            fatalError("Could Not Find JSON File")
+        }
+        let url = URL(fileURLWithPath: pathToJSONFile)
+        do {
+            let data = try Data(contentsOf: url)
+            let colorFromJSON = try Color.getColorData(from: data)
+            colorArray = colorFromJSON
+        } catch {
+            fatalError("\(error)")
+        }
     }
-    */
 
 }
 
@@ -51,7 +56,7 @@ extension ColorTabViewController: UITableViewDataSource, UITableViewDelegate {
         let oneColor = colorArray[indexPath.row]
         cell.textLabel?.text = oneColor.name.value
         cell.detailTextLabel?.text = oneColor.hex.clean
-        
+        cell.backgroundColor = UIColor(red: oneColor.rgb.fraction.r, green: oneColor.rgb.fraction.g, blue: oneColor.rgb.fraction.b, alpha: 1.0)
         
         return cell
     }

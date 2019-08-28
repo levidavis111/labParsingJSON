@@ -23,6 +23,7 @@ struct Color: Codable {
             throw JSONError.decodingError(error)
         }
     }
+    
 }
 
 struct ColorNameWrapper: Codable {
